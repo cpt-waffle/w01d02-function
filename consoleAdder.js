@@ -7,8 +7,28 @@
 // numbers
 // add numbers toghether 
 // return sum
+
+
+// starting the repo
+// git init
+// git remote add
+// git push
+//////////////////
+// work work work
+// git add
+// git commit
+// git push
+// REPEAT lines 17-20
 console.log("Command Line Arguments!");
 const numbers = process.argv.slice(2);
+// numbers is an array
+console.log(numbers);
+let sum = 0;
+for (let i = 0; i < numbers.length; i++) {
+    // i is the index of the number in the array
+    console.log('index is: ', i);
+    console.log('value of that index is: ',parseInt(numbers[i]));
+    sum = sum + parseInt(numbers[i]);
+}
 
-
-console.log(process.argv.slice(2));
+console.log("SUM is: ", sum);
