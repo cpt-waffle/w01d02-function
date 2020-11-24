@@ -9,4 +9,5 @@
 // return sum
 console.log("Command Line Arguments!");
 const numbers = process.argv.slice(2);
+
 console.log(process.argv.slice(2));
