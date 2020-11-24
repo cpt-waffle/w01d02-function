@@ -6,10 +6,11 @@ console.log("Command Line Arguments!");
 
 const sumArray = function(numbersArr) {
     let sum = 0;
-    for (let i = 0; i < numbersArr.length; i++) {
-        // i is the index of the number in the array
-        if (parseInt(numbersArr[i])) {
-            sum = sum + parseInt(numbersArr[i]);
+    for (let value of numbersArr) {
+        // i is the index of the number in the array when using for (let i in numbersArr)
+        // i is the value of the current loop when using for (let i of numbersArr)
+        if (parseInt(value)) {
+            sum += parseInt(value);
         }
     }
     return sum;
