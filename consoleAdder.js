@@ -9,15 +9,17 @@ const sumArray = function(numbersArr) {
     for (let value of numbersArr) {
         // i is the index of the number in the array when using for (let i in numbersArr)
         // i is the value of the current loop when using for (let i of numbersArr)
-        if (parseInt(value)) {
-            sum += parseInt(value);
+        let parsedValue = parseInt(value)
+        if (parsedValue) {
+            sum += parsedValue;
         }
     }
     return sum;
 }
 
-const numbers = process.argv.slice(2);
 // numbers is an array
+const numbers = process.argv.slice(2);
 console.log(numbers);
 const answer = sumArray(numbers);
 console.log("result: ", answer);
+
